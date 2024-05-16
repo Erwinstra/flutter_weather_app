@@ -1,0 +1,48 @@
+Stack(
+                        clipBehavior: Clip.none,
+                        children: [
+                          Positioned(
+                            top: -40,
+                            left: 5,
+                            child: Lottie.asset(
+                              getWeatherAnimation(
+                                  selectedWeather.mainCondition.toLowerCase()),
+                              width: 150,
+                            ),
+                          ),
+                          Positioned(
+                            top: 10,
+                            right: 10,
+                            child: Text(
+                              '${selectedWeather.temperature.toInt()}°',
+                              style: TextStyle(
+                                color: Colors.blue[100],
+                                fontSize: 60,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            top: size.height * 0.185,
+                            left: 22,
+                            child: Text(
+                              selectedWeather.mainCondition,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 10,
+                            width: size.width * 0.9,
+                            child: SecondDisplay(
+                              windSpeed: selectedWeather.windSpeed,
+                              humidity: selectedWeather.humidity,
+                              clouds: selectedWeather.clouds,
+                              secondColor: Colors.white,
+                              style: false,
+                              space: 3,
+                            ),
+                          )
+                        ],
+                      ),
