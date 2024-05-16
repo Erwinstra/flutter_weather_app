@@ -1,6 +1,6 @@
 # Flutter Weather App
 
-This is a Flutter weather app that provides current weather information and a 5-day forecast for selected cities. The app uses the **http** package for making API requests, **`lottie`** for displaying animated weather icons, and _`intl`_ for date and time formatting. Users can view detailed weather information including wind speed, humidity, and cloud coverage.
+This is a Flutter weather app that provides current weather information and a 5-day forecast for selected cities. The app uses the _`http`_ package for making API requests, **_lottie_** for displaying animated weather icons, and **'intl'** for date and time formatting. Users can view detailed weather information including wind speed, humidity, and cloud coverage.
 
 ## Features
 
